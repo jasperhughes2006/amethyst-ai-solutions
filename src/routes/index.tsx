@@ -281,6 +281,15 @@ function Index() {
   );
 }
 
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  return (
+    <div className="border-l-2 border-accent/40 pl-5">
+      <h3 className="text-lg font-medium text-foreground">{question}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{answer}</p>
+    </div>
+  );
+}
+
 function ValueCard({
   icon,
   title,

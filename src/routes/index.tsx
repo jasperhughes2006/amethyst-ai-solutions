@@ -22,10 +22,14 @@ function Index() {
             <h1 className="max-w-lg text-4xl leading-[1.1] text-foreground md:text-5xl lg:text-6xl">
               AI built around <em className="text-accent">you</em>
             </h1>
+            <p className="mt-4 max-w-md font-serif text-xl italic text-accent md:text-2xl">
+              “AI, made human.”
+            </p>
             <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground">
               We believe the best AI solutions come from understanding people first. 
               Every business operates on different margins — that extra hour of care can be the difference between good and transformative.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/contact"
@@ -53,12 +57,13 @@ function Index() {
               <img
                 src={heroImage}
                 alt="Abstract amethyst neural network visualisation"
-                className="h-full w-full object-cover"
+                className="h-full w-full scale-125 object-cover object-center"
                 width={1024}
                 height={1024}
               />
             </div>
           </div>
+
         </div>
       </section>
 
@@ -75,8 +80,51 @@ function Index() {
         </div>
       </section>
 
-      {/* Values / How We Work */}
+      {/* What We Do — Deeper Insight */}
       <section className="bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-5xl px-4 md:px-6">
+          <div className="mb-14 max-w-2xl">
+            <p className="mb-3 text-sm font-medium uppercase tracking-wider text-accent">
+              What we do
+            </p>
+            <h2 className="text-3xl text-foreground md:text-4xl">
+              Making AI accessible, one conversation at a time.
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+              AI can feel intimidating — a jargon-heavy world reserved for tech giants and specialists. 
+              We are here to change that. We sit down with you, listen to the real problems you face day to day, 
+              and translate them into thoughtful, individual solutions built for your business alone.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="border-l-2 border-accent/40 pl-5">
+              <h3 className="text-xl text-foreground">We listen first</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                No templates, no assumptions. We hear your problems, understand your constraints, 
+                and cater to your specific needs before writing a single line of anything.
+              </p>
+            </div>
+            <div className="border-l-2 border-accent/40 pl-5">
+              <h3 className="text-xl text-foreground">We design individually</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Every product we build is shaped around one client. Off-the-shelf tools rarely fit — 
+                bespoke ones become part of how your business breathes.
+              </p>
+            </div>
+            <div className="border-l-2 border-accent/40 pl-5">
+              <h3 className="text-xl text-foreground">Humans + AI, together</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                We do not replace people — we free them. AI and humans working side by side create a more 
+                efficient ecosystem, and in every business, time is money.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values / How We Work */}
+      <section className="bg-amethyst-cream/30 py-20 md:py-28">
+
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <div className="mb-12 text-center">
             <h2 className="text-3xl text-foreground md:text-4xl">How we work</h2>

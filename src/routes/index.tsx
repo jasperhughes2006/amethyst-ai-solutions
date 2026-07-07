@@ -57,12 +57,13 @@ function Index() {
               <img
                 src={heroImage}
                 alt="Abstract amethyst neural network visualisation"
-                className="h-full w-full object-cover"
+                className="h-full w-full scale-125 object-cover object-center"
                 width={1024}
                 height={1024}
               />
             </div>
           </div>
+
         </div>
       </section>
 

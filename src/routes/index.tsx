@@ -176,6 +176,41 @@ function Index() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="bg-amethyst-cream/30 py-20 md:py-28">
+        <div className="mx-auto max-w-4xl px-4 md:px-6">
+          <div className="mb-12 text-center">
+            <HelpCircle className="mx-auto h-6 w-6 text-accent" />
+            <h2 className="mt-3 text-3xl text-foreground md:text-4xl">Frequently asked questions</h2>
+            <p className="mt-3 text-muted-foreground">
+              Everything you need to know about getting started.
+            </p>
+          </div>
+          <div className="space-y-6">
+            <FAQItem
+              question="Is the 30-minute consultation really free?"
+              answer="Yes — completely. There is no charge, no credit card required, and no obligation to proceed afterwards. It is simply a conversation so we can understand your needs and you can decide if we are the right fit."
+            />
+            <FAQItem
+              question="What happens during the consultation?"
+              answer="We will ask about your business, the challenges you face day to day, and what you hope AI could help with. We will also explain how we work and answer any questions you have. It is relaxed, honest, and tailored to you."
+            />
+            <FAQItem
+              question="What do you actually charge for?"
+              answer="You only pay for the actual implementation — building, integrating, and deploying the AI solution we design together. The consultation, scoping, and proposal phases are always free."
+            />
+            <FAQItem
+              question="Are there any hidden fees?"
+              answer="Never. Before any work begins, we provide a clear, scoped proposal with a fixed price. If the scope changes, we discuss it openly and agree on any adjustments together."
+            />
+            <FAQItem
+              question="What if I decide not to proceed after the consultation?"
+              answer="That is absolutely fine. The consultation is genuinely no-strings-attached. Many people use it simply to get clarity on what AI could do for them, and we are happy to help regardless."
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Founders */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-4 md:px-6">

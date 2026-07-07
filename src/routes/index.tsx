@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Clock, Heart, Zap, Shield } from "lucide-react";
+import { ArrowRight, Clock, Heart, Zap, Shield, HelpCircle } from "lucide-react";
 import heroImage from "../assets/hero-amethyst.png";
 import annaPortrait from "../assets/anna-portrait.png";
 import jasperPortrait from "../assets/jasper-portrait.png";

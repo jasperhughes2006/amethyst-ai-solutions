@@ -22,10 +22,14 @@ function Index() {
             <h1 className="max-w-lg text-4xl leading-[1.1] text-foreground md:text-5xl lg:text-6xl">
               AI built around <em className="text-accent">you</em>
             </h1>
+            <p className="mt-4 max-w-md font-serif text-xl italic text-accent md:text-2xl">
+              “AI, made human.”
+            </p>
             <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground">
               We believe the best AI solutions come from understanding people first. 
               Every business operates on different margins — that extra hour of care can be the difference between good and transformative.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/contact"

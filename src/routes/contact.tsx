@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Send, CheckCircle, Clock, Shield, ArrowRight } from "lucide-react";
+import { Send, CheckCircle, Clock, Shield, ArrowRight, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -46,6 +46,42 @@ function Contact() {
               Completely free
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* Direct contact details */}
+      <section className="px-4 pb-4 md:px-6">
+        <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <ContactCard
+            icon={<Mail className="h-5 w-5" />}
+            label="Email"
+            value="hello@amethystconsultancy.com"
+            href="mailto:hello@amethystconsultancy.com"
+          />
+          <ContactCard
+            icon={<Phone className="h-5 w-5" />}
+            label="Phone"
+            value="+44 7700 900123"
+            href="tel:+447700900123"
+          />
+          <ContactCard
+            icon={<Linkedin className="h-5 w-5" />}
+            label="LinkedIn"
+            value="Amethyst Consultancy"
+            href="https://www.linkedin.com/company/amethyst-consultancy"
+          />
+          <ContactCard
+            icon={<MapPin className="h-5 w-5" />}
+            label="Based in"
+            value="London, United Kingdom"
+          />
+        </div>
+        <div className="mx-auto mt-6 max-w-4xl rounded-2xl border border-border/60 bg-card p-5 text-center">
+          <p className="text-sm text-muted-foreground">
+            Prefer to reach a founder directly?{" "}
+            <a href="mailto:anna@amethystconsultancy.com" className="text-accent underline-offset-2 hover:underline">anna@amethystconsultancy.com</a>{" "}·{" "}
+            <a href="mailto:jasper@amethystconsultancy.com" className="text-accent underline-offset-2 hover:underline">jasper@amethystconsultancy.com</a>
+          </p>
         </div>
       </section>
 
@@ -167,5 +203,34 @@ function StepCard({ number, title, description }: { number: string; title: strin
       <h3 className="mt-3 text-base">{title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{description}</p>
     </div>
+  );
+}
+
+function ContactCard({
+  icon,
+  label,
+  value,
+  href,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  href?: string;
+}) {
+  const inner = (
+    <div className="flex h-full flex-col items-start gap-2 rounded-2xl border border-border/60 bg-card p-5 transition-colors hover:border-accent/60">
+      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent/10 text-accent">
+        {icon}
+      </span>
+      <p className="text-xs uppercase tracking-wider text-muted-foreground">{label}</p>
+      <p className="text-sm text-foreground">{value}</p>
+    </div>
+  );
+  return href ? (
+    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined}>
+      {inner}
+    </a>
+  ) : (
+    inner
   );
 }

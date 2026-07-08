@@ -1,32 +1,55 @@
 import { Link } from "@tanstack/react-router";
+import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="border-t border-border/40 bg-background">
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-        <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+        <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link to="/" className="text-lg tracking-tight text-foreground">
               Amethyst Consultancy
             </Link>
-            <p className="mt-1 max-w-xs text-sm text-muted-foreground">
+            <p className="mt-2 max-w-xs text-sm text-muted-foreground">
               Personalised AI solutions for people who matter.
             </p>
           </div>
-          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
-            <Link to="/" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              Home
-            </Link>
-            <Link to="/about" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              About
-            </Link>
-            <Link to="/contact" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              Contact
-            </Link>
+
+          <div>
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">Get in touch</p>
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <a href="mailto:hello@amethystconsultancy.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
+                  <Mail className="h-3.5 w-3.5" /> hello@amethystconsultancy.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+447700900123" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
+                  <Phone className="h-3.5 w-3.5" /> +44 7700 900123
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/amethyst-consultancy" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
+                  <Linkedin className="h-3.5 w-3.5" /> LinkedIn
+                </a>
+              </li>
+              <li className="inline-flex items-center gap-2 text-muted-foreground">
+                <MapPin className="h-3.5 w-3.5" /> London, United Kingdom
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">Explore</p>
+            <ul className="mt-3 space-y-2 text-sm">
+              <li><Link to="/" className="text-muted-foreground hover:text-foreground">Home</Link></li>
+              <li><Link to="/about" className="text-muted-foreground hover:text-foreground">About</Link></li>
+              <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
+            </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-border/40 pt-6 text-sm text-muted-foreground">
-          {new Date().getFullYear()} Amethyst Consultancy. Student-founded.
+        <div className="mt-10 border-t border-border/40 pt-6 text-sm text-muted-foreground">
+          © {new Date().getFullYear()} Amethyst Consultancy. Student-founded.
         </div>
       </div>
     </footer>

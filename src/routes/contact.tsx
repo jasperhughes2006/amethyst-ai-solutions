@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Send, CheckCircle, Clock, Shield, ArrowRight, Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Send, CheckCircle, Clock, Shield, ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -51,37 +51,24 @@ function Contact() {
 
       {/* Direct contact details */}
       <section className="px-4 pb-4 md:px-6">
-        <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-3">
           <ContactCard
             icon={<Mail className="h-5 w-5" />}
             label="Email"
-            value="hello@amethystconsultancy.com"
-            href="mailto:hello@amethystconsultancy.com"
+            value="jasperhughes2006@gmail.com"
+            href="mailto:jasperhughes2006@gmail.com"
           />
           <ContactCard
             icon={<Phone className="h-5 w-5" />}
             label="Phone"
-            value="+44 7700 900123"
-            href="tel:+447700900123"
-          />
-          <ContactCard
-            icon={<Linkedin className="h-5 w-5" />}
-            label="LinkedIn"
-            value="Amethyst Consultancy"
-            href="https://www.linkedin.com/company/amethyst-consultancy"
+            value="+44 7975 578614"
+            href="tel:+447975578614"
           />
           <ContactCard
             icon={<MapPin className="h-5 w-5" />}
             label="Based in"
             value="London, United Kingdom"
           />
-        </div>
-        <div className="mx-auto mt-6 max-w-4xl rounded-2xl border border-border/60 bg-card p-5 text-center">
-          <p className="text-sm text-muted-foreground">
-            Prefer to reach a founder directly?{" "}
-            <a href="mailto:anna@amethystconsultancy.com" className="text-accent underline-offset-2 hover:underline">anna@amethystconsultancy.com</a>{" "}·{" "}
-            <a href="mailto:jasper@amethystconsultancy.com" className="text-accent underline-offset-2 hover:underline">jasper@amethystconsultancy.com</a>
-          </p>
         </div>
       </section>
 

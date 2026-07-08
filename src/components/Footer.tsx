@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,18 +19,13 @@ export function Footer() {
             <p className="text-xs uppercase tracking-wider text-muted-foreground">Get in touch</p>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <a href="mailto:hello@amethystconsultancy.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
-                  <Mail className="h-3.5 w-3.5" /> hello@amethystconsultancy.com
+                <a href="mailto:jasperhughes2006@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
+                  <Mail className="h-3.5 w-3.5" /> jasperhughes2006@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+447700900123" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
-                  <Phone className="h-3.5 w-3.5" /> +44 7700 900123
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/amethyst-consultancy" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
-                  <Linkedin className="h-3.5 w-3.5" /> LinkedIn
+                <a href="tel:+447975578614" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
+                  <Phone className="h-3.5 w-3.5" /> +44 7975 578614
                 </a>
               </li>
               <li className="inline-flex items-center gap-2 text-muted-foreground">
